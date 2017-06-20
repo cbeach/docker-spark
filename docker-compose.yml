@@ -21,7 +21,6 @@ master:
     - 7077:7077
     - 8080:8080
   volumes:
-    - ./conf/master:/conf
     - ./data:/tmp/data
 
 worker:
@@ -47,5 +46,4 @@ worker:
   ports:
     - 8081:8081
   volumes:
-    - ./conf/worker:/conf
     - ./data:/tmp/data
